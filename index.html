@@ -45,8 +45,15 @@ background: linear-gradient(to right bottom, darkblue, blue);
 -ms-background-clip: text;
 -ms-text-fill-color: transparent;
 }
+.grid {
+display: grid;
+grid-template-areas: "nav ads";
+}
 #left {
-align-content: left;
+grid-area: nav;
+}
+#right {
+grid-area: ads;
 }
 </style>
 <Script>
